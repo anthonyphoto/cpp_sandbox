@@ -59,7 +59,7 @@ int main(int argc, char* argv[])
     d2->printInfo();
 
     Animal a1("Remi");
-    a1.printInfo();
+    a1.printInfo(); // Dog::printInfo 실행함
 
     Animal* a2 = &d1;
 

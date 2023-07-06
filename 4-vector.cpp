@@ -11,7 +11,24 @@ void printVector(vector<int> v) {
 }
 
 int main(int argc, char* argv[])
-{
+{   
+    vector<int> vtest;
+    for (size_t i = 0; i < 10; i++) {
+        vtest.push_back(i * 2);
+    }
+
+    for (size_t i = 0; i < 10; i++) {
+        cout << vtest.at(i) << endl;
+    }
+    
+    for (vector<int>::iterator it = vtest.begin(); it != vtest.end(); it++) {
+        cout << *it << endl;
+    }
+
+
+    return 0;
+
+
     vector<int> v(5); // 처음에 사이즈 선언하거나 resize하면 size와 capacity가 같이 세팅.. 자동으로 증가되면 capacity만 증가됨
 
 
