@@ -23,18 +23,12 @@ int main() {
     // strPtr      B00         pointer(e.g., A00)       8
     // num         C00         number (4byte)           4
 
-    // variable은 주소를 가지고 있고 이름을 대면 주소에 있는 값을 리턴함
-    // domain naver처럼 모든 변수는 address하고 동일함
 
-    // 모든 변수는 pass할때 value로 넘어감.. 단 array만 예외
 
-    strPtr = strArr; // 에러가 날까? 반대면 에러남s
-    // strArr = strPtr; // 에러남
+    strPtr = strArr; 
 
     cout << strPtr << endl;
 
-    // strArr 에 Diane을 할당함
-    // strArr = "Diane";   //안됨
     strcpy(strArr, "Diane"); // 이렇게 안하려면 declare할떄 정의하면 됨
 
     strcpy(strPtr, "Test"); // 1. strArr이 덮어씌워짐 2. line 23을 지우면 에러남 
